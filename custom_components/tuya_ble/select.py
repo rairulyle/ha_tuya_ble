@@ -121,6 +121,29 @@ class TuyaBLETemperatureUnitMapping(TuyaBLESelectMapping):
 
 
 mapping: dict[str, TuyaBLECategorySelectMapping] = {
+    "dj": TuyaBLECategorySelectMapping(
+        products={
+            "c2twgywo": [  # MiBoxer BS64 stair controller
+                TuyaBLESelectMapping(
+                    dp_id=114,
+                    description=SelectEntityDescription(
+                        key="stair_mode",
+                        icon="mdi:stairs",
+                        options=["auto", "on", "off"],
+                    ),
+                ),
+                TuyaBLESelectMapping(
+                    dp_id=104,
+                    description=SelectEntityDescription(
+                        key="auto_effect",
+                        icon="mdi:stairs-up",
+                        options=["full", "gradual", "following", "flowing"],
+                        entity_category=EntityCategory.CONFIG,
+                    ),
+                ),
+            ],
+        },
+    ),
     "sfkzq": TuyaBLECategorySelectMapping(
         products={
             "ojrvmfkk": [
@@ -675,6 +698,20 @@ mapping: dict[str, TuyaBLECategorySelectMapping] = {
     ),
     "szjqr": TuyaBLECategorySelectMapping(
         products={
+            **dict.fromkeys(
+                ["bo25vaxy"],  # CBF02V2 Finger Robot
+                [
+                    TuyaBLESelectMapping(
+                        dp_id=2,
+                        description=SelectEntityDescription(
+                            key="fingerbot_mode",
+                            entity_category=EntityCategory.CONFIG,
+                            # BLE enum 1 is named long_press in the Thing Model.
+                            options=["click", "switch"],
+                        ),
+                    ),
+                ],
+            ),
             **dict.fromkeys(
                 ["3yqdo5yt", "xhf790if", "yn4x5fa7"],  # CubeTouch 1s and II
                 [

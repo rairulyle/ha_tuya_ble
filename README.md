@@ -55,8 +55,8 @@ See a device marked Experimental you have? We could use real world testing feedb
   </thead>
   <tbody>
     <tr>
-      <td rowspan="8"><strong>Fingerbots</strong></td>
-      <td rowspan="8"><code>szjqr</code></td>
+      <td rowspan="9"><strong>Fingerbots</strong></td>
+      <td rowspan="9"><code>szjqr</code></td>
       <td>Fingerbot</td>
       <td><code>ltak7e1p</code>, <code>y6kttvd6</code>, <code>yrnk7mnn</code>, <code>nvr2rocq</code>, <code>bnt7wajf</code>, <code>rvdceqjh</code>, <code>5xhbk964</code></td>
       <td>Original device, first in category, powered by CR2 battery.</td>
@@ -95,6 +95,11 @@ See a device marked Experimental you have? We could use real world testing feedb
       <td>Nedis SmartLife Finger Robot</td>
       <td><code>yn4x5fa7</code></td>
       <td>—</td>
+    </tr>
+    <tr>
+      <td>Finger Robot CBF02V2</td>
+      <td><code>bo25vaxy</code></td>
+      <td>Click and Switch modes, hold time, 0-30 position controls, battery and reported charge status. Invert switch status adjusts the on/off indication without moving the arm.</td>
     </tr>
     <tr>
       <td rowspan="6"><strong>Temperature and humidity sensors</strong></td>
@@ -310,8 +315,8 @@ See a device marked Experimental you have? We could use real world testing feedb
       <td>—</td>
     </tr>
     <tr>
-      <td rowspan="6"><strong>Covers</strong></td>
-      <td rowspan="6"><code>cl</code></td>
+      <td rowspan="7"><strong>Covers</strong></td>
+      <td rowspan="7"><code>cl</code></td>
       <td>Moes Roller Blind Motor</td>
       <td><code>4pbr8eig</code></td>
       <td>—</td>
@@ -340,6 +345,11 @@ See a device marked Experimental you have? We could use real world testing feedb
       <td>AOK AM24 Venetian Blinds Motor</td>
       <td><code>dy4dh1q0</code></td>
       <td>Experimental.</td>
+    </tr>
+    <tr>
+      <td>Roller Blind Robot RSH-MC27</td>
+      <td><code>ousymtkt</code></td>
+      <td>—</td>
     </tr>
     <tr>
       <td rowspan="9"><strong>Water valve controller</strong></td>
@@ -389,8 +399,8 @@ See a device marked Experimental you have? We could use real world testing feedb
       <td>Experimental</td>
     </tr>
     <tr>
-      <td rowspan="5"><strong>Lights</strong></td>
-      <td rowspan="5">Multiple (e.g. <code>dd</code>, <code>dj</code>)</td>
+      <td rowspan="6"><strong>Lights</strong></td>
+      <td rowspan="6">Multiple (e.g. <code>dd</code>, <code>dj</code>)</td>
       <td>Strip Lights / Magiacous RGB light bar</td>
       <td><code>nvfrtxlq</code></td>
       <td rowspan="4">Most BLE light products should be supported as the Light class tries to get device description from the cloud when they are added. But only Strip Lights (category_id 'dd') Magiacous RGB light bar (product_id 'nvfrtxlq') has been tested.<br><br>See note on Bluetooth Mesh light compatibility below.</td>
@@ -411,6 +421,11 @@ See a device marked Experimental you have? We could use real world testing feedb
       <td>LED BULB B509Z2</td>
       <td><code>bpqbwf8y</code></td>
       <td>Experimental</td>
+    </tr>
+    <tr>
+      <td>MiBoxer BS64 Stair Light Controller</td>
+      <td><code>c2twgywo</code></td>
+      <td>Experimental. The light switches the controller between On and Off mode (Auto, sensor triggered, reads as off) and sets brightness and colour temperature. Mode and auto effect selects, step time and light off delay numbers. Uses legacy key derivation even when a secKey is issued.</td>
     </tr>
     <tr>
       <td><strong>Wireless switches</strong></td>
@@ -449,6 +464,13 @@ See a device marked Experimental you have? We could use real world testing feedb
       <td>Parkside Robot Mower PAMRC 250 A1 (BT) City</td>
       <td><code>9hdajpiw</code></td>
       <td>Lawn mower entity (start / pause / dock), command and schedule buttons, battery, activity, warning, error and work logs, schedule and zones, running time, rain delay, rain mode, hedgehog protection and blade stop. Experimental</td>
+    </tr>
+    <tr>
+      <td><strong>Cooking thermometers</strong></td>
+      <td><code>swtz</code></td>
+      <td>Lidl GRILLMEISTER Bluetooth Cooking Thermometer</td>
+      <td><code>iv13iqhf</code></td>
+      <td>Two probe temperatures and battery</td>
     </tr>
   </tbody>
 </table>

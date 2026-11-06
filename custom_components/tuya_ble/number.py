@@ -421,6 +421,32 @@ mapping: dict[str, TuyaBLECategoryNumberMapping] = {
     "szjqr": TuyaBLECategoryNumberMapping(
         products={
             **dict.fromkeys(
+                ["bo25vaxy"],  # CBF02V2 Finger Robot
+                [
+                    TuyaBLEHoldTimeMapping(
+                        dp_id=3,
+                        description=TuyaBLEHoldTimeDescription(
+                            native_min_value=0.3,
+                            native_step=0.1,
+                        ),
+                        coefficient=10.0,
+                    ),
+                    TuyaBLENumberMapping(
+                        dp_id=4,
+                        description=TuyaBLEUpPositionDescription(
+                            native_max_value=30,
+                        ),
+                    ),
+                    TuyaBLENumberMapping(
+                        dp_id=5,
+                        description=TuyaBLEDownPositionDescription(
+                            native_min_value=0,
+                            native_max_value=30,
+                        ),
+                    ),
+                ],
+            ),
+            **dict.fromkeys(
                 ["3yqdo5yt", "xhf790if"],  # CubeTouch 1s and II
                 [
                     TuyaBLEHoldTimeMapping(dp_id=3),
@@ -1050,6 +1076,33 @@ mapping: dict[str, TuyaBLECategoryNumberMapping] = {
                         native_min_value=0,
                         native_unit_of_measurement=UnitOfTime.SECONDS,
                         native_step=1,
+                    ),
+                ),
+            ],
+            "c2twgywo": [  # MiBoxer BS64 stair controller (ranges assumed)
+                TuyaBLENumberMapping(
+                    dp_id=103,  # in 0.1 s units
+                    coefficient=10.0,
+                    description=NumberEntityDescription(
+                        key="step_time",
+                        icon="mdi:stairs",
+                        native_max_value=10,
+                        native_min_value=0.1,
+                        native_unit_of_measurement=UnitOfTime.SECONDS,
+                        native_step=0.1,
+                        entity_category=EntityCategory.CONFIG,
+                    ),
+                ),
+                TuyaBLENumberMapping(
+                    dp_id=105,
+                    description=NumberEntityDescription(
+                        key="off_delay",
+                        icon="mdi:timer-outline",
+                        native_max_value=600,
+                        native_min_value=1,
+                        native_unit_of_measurement=UnitOfTime.SECONDS,
+                        native_step=1,
+                        entity_category=EntityCategory.CONFIG,
                     ),
                 ),
             ],

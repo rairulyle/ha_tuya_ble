@@ -19,6 +19,8 @@ from custom_components.tuya_ble.tuya_ble.const import TuyaBLECode
         ("mknd4lci", "fedcba9876543210", 4),
         ("mknd4lci", None, 4),
         ("qcrilcpr", "fedcba9876543210", 4),
+        ("gvygg3m8", "fedcba9876543210", 4),
+        ("c2twgywo", "fedcba9876543210", 4),
         ("jntxv3q4", "fedcba9876543210", 14),
     ],
 )

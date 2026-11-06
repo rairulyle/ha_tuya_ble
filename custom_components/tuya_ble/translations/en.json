@@ -105,6 +105,9 @@
             }
         },
         "button": {
+            "invert_switch_status": {
+                "name": "Invert switch status"
+            },
             "push": {
                 "name": "Push"
             },
@@ -212,6 +215,12 @@
             },
             "rain_delay_time": {
                 "name": "Rain delay time"
+            },
+            "step_time": {
+                "name": "Step time"
+            },
+            "off_delay": {
+                "name": "Light off delay"
             }
         },
         "select": {
@@ -237,6 +246,7 @@
             "fingerbot_mode": {
                 "name": "Mode",
                 "state": {
+                    "click": "Click",
                     "program": "Program",
                     "push": "Push",
                     "switch": "Switch"
@@ -339,6 +349,23 @@
                     "spot": "Spot",
                     "goto_charge": "Return to dock"
                 }
+            },
+            "stair_mode": {
+                "name": "Mode",
+                "state": {
+                    "auto": "Auto",
+                    "on": "On",
+                    "off": "Off"
+                }
+            },
+            "auto_effect": {
+                "name": "Auto effect",
+                "state": {
+                    "full": "Full",
+                    "gradual": "Gradual",
+                    "following": "Following",
+                    "flowing": "Flowing"
+                }
             }
         },
         "sensor": {
@@ -371,6 +398,8 @@
             "battery_charging": {
                 "name": "Battery charging",
                 "state": {
+                    "none": "Not charging",
+                    "charge_done": "Charged",
                     "charged": "Charged",
                     "charging": "Charging",
                     "not_charging": "Not charging"
@@ -604,6 +633,12 @@
             },
             "zones": {
                 "name": "Zones"
+            },
+            "probe_1_temperature": {
+                "name": "Probe 1 temperature"
+            },
+            "probe_2_temperature": {
+                "name": "Probe 2 temperature"
             }
         },
         "switch": {

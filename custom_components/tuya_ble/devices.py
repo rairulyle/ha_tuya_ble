@@ -504,6 +504,20 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
     ),
     "szjqr": TuyaBLECategoryInfo(
         products={
+            **dict.fromkeys(
+                ["bo25vaxy"],  # CBF02V2 Finger Robot
+                TuyaBLEProductInfo(
+                    name="Finger Robot CBF02V2",
+                    fingerbot=TuyaBLEFingerbotInfo(
+                        switch=1,
+                        mode=2,
+                        up_position=4,
+                        down_position=5,
+                        hold_time=3,
+                        reverse_positions=0,
+                    ),
+                ),
+            ),
             "3yqdo5yt": TuyaBLEProductInfo(  # device product_id
                 name="CUBETOUCH 1s",
                 fingerbot=TuyaBLEFingerbotInfo(
@@ -760,12 +774,17 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
             "bpqbwf8y": TuyaBLEProductInfo(
                 name="LED BULB B509Z2",
             ),
+            "c2twgywo": TuyaBLEProductInfo(
+                name="BS64 Stair Light Controller",
+                manufacturer="MiBoxer",
+            ),
         },
     ),
     "cl": TuyaBLECategoryInfo(
         products={
             **dict.fromkeys(
-                ["4pbr8eig", "vlwf3ud6"], TuyaBLEProductInfo(name="Blind Controller")
+                ["4pbr8eig", "vlwf3ud6", "ousymtkt"],
+                TuyaBLEProductInfo(name="Blind Controller"),
             ),
             "kcy0x4pi": TuyaBLEProductInfo(name="Curtain Controller"),
             "dy4dh1q0": TuyaBLEProductInfo(name="AOK AM24 Venetian Blinds Motor"),
@@ -811,6 +830,13 @@ devices_database: dict[str, TuyaBLECategoryInfo] = {
         products={
             "9hdajpiw": TuyaBLEProductInfo(  # device product_id
                 name="Robot Mower PAMRC 250 A1 (BT) City",
+            ),
+        },
+    ),
+    "swtz": TuyaBLECategoryInfo(
+        products={
+            "iv13iqhf": TuyaBLEProductInfo(  # device product_id
+                name="GRILLMEISTER Bluetooth Cooking Thermometer",
             ),
         },
     ),
